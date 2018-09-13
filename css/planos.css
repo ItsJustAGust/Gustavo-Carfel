@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(232, 251, 255);
+    background-image: linear-gradient(white,rgb(173, 233, 245), #00BADF, darkblue);
+    perspective: 800em;
+}
+.body{
+    font-size: 14px;
+}
+#menuBotao {
+    display: none;
+}
+.top-bar{
+    width: 100%;
+    height: auto;
+    background-color: #00BADF;
+    background-image: linear-gradient(-300deg , #00BADF, darkblue);
+    display: flex;
+    padding: 2% 20%;
+}
+.logo{
+    font-size: 1.4em;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.serv{
+    font-size: 10px;
+    transform: translateX(1vh);
+}
+.serv h2{
+    margin-top: 1vh;
+    transform: translateX(2vh);
+    font-size: 1em;
+    color: white;
+}
+.serv h1{
+    color: white;
+    transform: translateX(2.5vh);
+}
+.menu{
+    flex: 3;
+    transform: translateX(5vh);
+}
+.menu ul{
+    list-style-type: none;
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+.menu a {
+    flex: 1;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px 50px 15px 50px;
+    font-size: 24px;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+.menu a:hover {
+    background-color: rgb(2, 0, 138);
+    box-shadow: 0px 3px 5px #7776a1;
+}
+.menu ul a:hover{
+    color: #FF0000;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    transform: translateY(10vh);
+}
+.title h2{
+    font-size: 3em;
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+    text-shadow: 1px 1px black;
+}
+/* começo dos planos */
+.planos {
+    display: grid;
+    grid-column-gap: 50px;
+    grid-template-columns: 40vh 40vh 40vh;
+    justify-content: center;
+    padding: 10px;
+    transform: translateY(20vh);
+}
+.planos h3{
+    font-size: 1em;
+    /* titulo */
+}
+/* primeira coluna */
+.plano-free {
+    background-color: rgba(153, 199, 209, 0);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    border-color: #00BADF;
+    grid-column: auto;
+    box-shadow: 3px 3px rgb(73, 73, 73);
+}
+.plano-free h3{
+    color: rgb(119, 119, 119);
+    justify-content: center;
+    height: 9vh;
+}
+.plano-free p{
+    justify-content: space-around;
+    margin-top: 5vh;
+    font-size: 24px;
+}
+.positivos{
+    display: flex;
+    justify-content: left;
+}
+.positivos img{
+    height: 5vh;
+    width: 5vh;
+    transform: translateY(5vh);
+}
+.preço1 h3{
+    margin-top: 5vh;
+    color: black;
+}
+/* fim da primeira coluna */
+
+/* segunda coluna */
+.plano-full {
+   background-color: rgba(255, 255, 255, 0.8);
+   border: 1px solid rgba(0, 0, 0, 0.8);
+   padding: 20px;
+   font-size: 30px;
+   text-align: center;
+   background-color: rgba(29, 186, 221, 0.144);
+   box-shadow: 3px 3px rgb(73, 73, 73);
+}
+.plano-full h3{
+   color: #242493;
+    justify-content: center;
+    height: 9vh;
+}
+.plano-full p{
+    justify-content: space-around;
+    margin-top: 5vh;
+    font-size: 24px;
+}
+.positivos{
+    display: flex;
+    justify-content: left;
+}
+.positivos img{
+    height: 5vh;
+    width: 5vh;
+    transform: translateY(5vh);
+}
+.preço h3{
+    margin-top: 5vh;
+    color: black;
+}
+/* segunda coluna */
+
+/* terceira coluna */
+.plano-premi {
+   background-color: rgba(255, 255, 255, 0.8);
+   border: 1px solid rgba(0, 0, 0, 0.8);
+   padding: 20px;
+   font-size: 30px;
+   text-align: center;
+   background-color: rgba(29, 186, 221, 0.5);
+   box-shadow: 3px 3px rgb(73, 73, 73);
+}
+.plano-premi h3{
+    color: #0000FF;
+    justify-content: center;
+}
+.plano-premi p{
+    justify-content: space-around;
+    margin-top: 5vh;
+    font-size: 24px;
+}
+.positivos{
+    display: flex;
+    justify-content: left;
+    
+}
+.positivos img{
+    height: 5vh;
+    width: 5vh;
+    transform: translateY(5vh);
+}
+.preço h3{
+    margin-top: 5vh;
+    color: black;
+}
+/* fim da terceira coluna */
+
+/* footer */
+.roda{
+    background-color: rgb(56, 56, 56);
+    background-image: linear-gradient(grey, black);
+    height: 20vh;
+    width: 100%;
+
+}
+.roda h3{
+    position: relative;
+    justify-content: left;
+    color: white;
+    transform: translate(10vh, 7vh);
+    width: 15%;
+}
+.redes{
+    position: relative;
+    display: flex;
+    justify-content: right;
+    transform: translate(176vh, 1vh);
+    width: 10%;
+}
+
